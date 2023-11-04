@@ -511,4 +511,69 @@ footer p {
     height: auto;
     padding: 1rem;
   }
+
+}
+
+/* General styling for larger screens */
+
+/* Add the following CSS for iPhone 13 Pro Max (2532 × 1170) */
+@media only screen and (max-width: 2532px) and (max-height: 1170px) {
+
+  /* Adjust font sizes for iPhone 13 Pro Max */
+  .title {
+    font-size: 3rem;
+  }
+
+  .experience-sub-title {
+    font-size: 2rem;
+  }
+
+  /* Adjust navigation for iPhone 13 Pro Max */
+  nav {
+    height: 12vh;
+  }
+
+  .nav-links {
+    font-size: 1.5rem;
+  }
+
+  /* Hamburger menu for iPhone 13 Pro Max */
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: block;
+  }
+
+  .hamburger-menu {
+    margin-right: 1rem;
+  }
+
+  .menu-links {
+    max-height: 0;
+    position: absolute;
+    top: 6vh;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menu-links.open {
+    max-height: 100vh;
+  }
+
+  /* Adjust section margins for iPhone 13 Pro Max */
+  section {
+    margin: 0 2rem;
+    height: auto;
+    padding-top: 4vh;
+  }
+
+  /* Adjust button styles for iPhone 13 Pro Max */
+  .btn {
+    font-size: 1rem;
+    padding: 1rem
+  }
 }
