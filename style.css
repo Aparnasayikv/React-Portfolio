@@ -171,6 +171,7 @@ section {
 
 .section__pic-container {
   display: flex;
+  justify-content: space-evenly;
   height: 400px;
   width: 400px;
   margin: auto 0;
@@ -274,14 +275,13 @@ section {
 }
 
 .about-details-container {
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
 }
 
 .about-containers,
 .about-details-container {
   display: flex;
-
 }
 
 .about-pic {
@@ -330,8 +330,10 @@ section {
 
 .experience-details-container {
   display: flex;
-  justify-content: center;
+
   flex-direction: column;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
 }
 
 .article-container {
@@ -365,7 +367,6 @@ article .icon {
 
 /* PROJECTS SECTION */
 
-
 #projects {
   position: relative;
 }
@@ -382,7 +383,7 @@ article .icon {
 }
 
 .project-title {
-  margin: 1rem;
+  margin: 0.5rem;
   color: black;
 }
 
