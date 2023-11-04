@@ -442,3 +442,73 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* General styling for larger screens */
+
+/* Add the following CSS for smaller screens, such as iPhones */
+@media only screen and (max-width: 768px) {
+
+  /* Adjust font sizes for smaller screens */
+  .title {
+    font-size: 2rem;
+  }
+
+  .experience-sub-title {
+    font-size: 1.5rem;
+  }
+
+  /* Adjust navigation for smaller screens */
+  nav {
+    height: 10vh;
+  }
+
+  .nav-links {
+    font-size: 1rem;
+  }
+
+  /* Hamburger menu for smaller screens */
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: block;
+  }
+
+  .hamburger-menu {
+    margin-right: 1rem;
+  }
+
+  .menu-links {
+    max-height: 0;
+    position: absolute;
+    top: 5vh;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menu-links.open {
+    max-height: 100vh;
+  }
+
+  /* Adjust section margins for smaller screens */
+  section {
+    margin: 0 1rem;
+    height: auto;
+    padding-top: 4vh;
+  }
+
+  /* Adjust button styles for smaller screens */
+  .btn {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+
+  /* Adjust footer for smaller screens */
+  footer {
+    height: auto;
+    padding: 1rem;
+  }
+}
