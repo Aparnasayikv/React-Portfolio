@@ -1,103 +1,97 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-  .about-containers {
-    flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
-    height: fit-content;
-  }
+/* =============================================
+   RESPONSIVE — Aparna K V Portfolio
+   ============================================= */
+
+/* ---- LARGE DESKTOP (max 1280px) ---- */
+@media screen and (max-width: 1280px) {
+  #desktop-nav { padding: 0 5%; }
+  section { padding: 90px 5% 75px; }
+  footer { padding: 2rem 5%; }
+  .hero-name { font-size: 3.4rem; }
+  .hero-image-wrapper { width: 280px; height: 280px; }
+  #about .about-grid { grid-template-columns: 1fr 1.4fr; gap: 3rem; }
 }
 
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-  }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
-  .section-container {
-    display: block;
-  }
-  .arrow {
-    display: none;
-  }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
-  }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-  .about-containers {
-    margin-top: 0;
-  }
+/* ---- TABLET (max 1024px) ---- */
+@media screen and (max-width: 1024px) {
+  section { padding: 80px 4.5% 70px; }
+  .hero-name { font-size: 3rem; }
+  .hero-image-wrapper { width: 255px; height: 255px; }
+  #skills .skills-grid { grid-template-columns: 1fr 1fr; }
+  #projects .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  .span-2 { grid-column: span 2; }
 }
 
+/* ---- HAMBURGER BREAKPOINT (max 900px) ---- */
+@media screen and (max-width: 900px) {
+  #desktop-nav  { display: none; }
+  #hamburger-nav{ display: flex; }
+
+  section { padding: 72px 5% 60px; }
+  footer { padding: 1.5rem 5%; }
+
+  .hero-content { flex-direction: column-reverse; text-align: center; gap: 2.5rem; padding-top: 0.5rem; }
+  .hero-text { display: flex; flex-direction: column; align-items: center; }
+  .hero-description { margin-left: auto; margin-right: auto; }
+  .hero-buttons { justify-content: center; }
+  .hero-socials { justify-content: center; }
+  .hero-typed-line { justify-content: center; }
+  .hero-image-wrapper { width: 215px; height: 215px; }
+
+  /* Reduce floating icons on tablet */
+  .aws-fi, .git-fi { display: none; }
+  .fi { opacity: 0.7; }
+
+  #about .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  #skills .skills-grid { grid-template-columns: 1fr; }
+  .timeline-header { flex-direction: column; gap: 0.5rem; }
+  .timeline-badge { align-self: flex-start; }
+
+  #projects .projects-grid { grid-template-columns: 1fr; }
+  .span-2 { grid-column: span 1; }
+
+  .contact-grid { grid-template-columns: 1fr; max-width: 460px; }
+  .footer-inner { flex-direction: column; text-align: center; }
+  .footer-nav { justify-content: center; }
+}
+
+/* ---- MOBILE (max 600px) ---- */
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
-  }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
-  .title {
-    font-size: 2rem;
-  }
-  .text-container {
-    text-align: justify;
-  }
+  section { padding: 65px 4.5% 55px; }
+  footer { padding: 1.25rem 4.5%; }
+
+  .section-title { font-size: 2rem; }
+  .hero-name { font-size: 2.4rem; }
+  .hero-title { font-size: 1.2rem; }
+  .hero-image-wrapper { width: 180px; height: 180px; }
+  .scroll-hint { display: none; }
+
+  /* Hide all floating icons on mobile */
+  .floating-icons { display: none; }
+
+  .about-stats { gap: 0.5rem; }
+  .stat-number { font-size: 1.6rem; }
+  .stat-label  { font-size: 0.62rem; }
+
+  .exp-bullets li { font-size: 0.81rem; }
+  .certs-row { flex-direction: column; align-items: stretch; }
+  .cert-card { justify-content: flex-start; }
+
+  .browser-screen { height: 130px; }
+  .browser-screen.tall { height: 170px; }
+
+  .contact-intro { font-size: 0.87rem; }
+  .contact-card { padding: 1rem; }
+  .contact-value { font-size: 0.79rem; }
+  .footer-nav { gap: 1rem; }
+}
+
+/* ---- VERY SMALL (max 400px) ---- */
+@media screen and (max-width: 400px) {
+  section { padding: 60px 4% 50px; }
+  .hero-name { font-size: 2rem; }
+  .btn { padding: 0.65rem 1.3rem; font-size: 0.82rem; }
+  .hero-image-wrapper { width: 155px; height: 155px; }
+  .timeline-card { padding: 1.25rem; }
+  .project-body { padding: 1rem; }
 }

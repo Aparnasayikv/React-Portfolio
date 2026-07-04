@@ -1,418 +1,582 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>My Portfolio</title>
-      <link rel="stylesheet" href="style.css" />
-      <link rel="stylesheet" href="mediaqueries.css" />
-    </head>
-    <body>
-      <nav id="desktop-nav">
-        <div class="logo">Aparna K V</div>
-        <div>
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <nav id="hamburger-nav">
-        <div class="logo">Aparna KV</div>
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          </div>
-        </div>
-      </nav>
-      <section id="profile">
-        <div class="section__pic-container">
-          <img
-            src="https://img.freepik.com/free-vector/telecommuting-concept-illustrated_23-2148500888.jpg?w=1060&t=st=1699116541~exp=1699117141~hmac=89f209c62e004b6e80efb3c42f709f7e2db27d620923bebe0cf579374f33f22c"
-            alt="Aparna profile picture"
-          />
-        </div>
-        <div class="section__text">
-          <p class="section__text__p1">Hello, I'm</p>
-          <h1 class="title">Aparna K V</h1>
-          <p class="section__text__p2">Frontend Developer</p>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2"
-              onclick="window.open('https://docs.google.com/document/d/1oKHuiB_g-5zmX7RrbYg16JQjDhXP3VWBwv2nhPOmVjo/edit?usp=drive_link')"
-            >
-              Download CV
-            </button>
-            <button
-              class="btn btn-color-1"
-              onclick="location.href='./#contact'"
-            >
-              Contact Info
-            </button>
-          </div>
-          <div id="socials-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="My LinkedIn profile"
-              class="icon"
-              onclick="location.href='https://www.linkedin.com/in/aparnakv/'"
-            />
-            <img
-              src="./assets/github.png"
-              alt="My Github profile"
-              class="icon"
-              onclick="location.href='https://github.com/Aparnasayikv'"
-            />
-          </div>
-        </div>
-      </section>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        style="right: 4rem"
-        onclick="location.href='#about'"
-      />
-      <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-          <div class="section__pic-container">
-            <img
-              src="https://img.freepik.com/premium-photo/female-developer-background_665280-9646.jpg?size=626&ext=jpg&uid=R119785245&ga=GA1.1.530488152.1696753206&semt=ais"
-              alt="Profile picture"
-              class="about-pic"
-            />
-          </div>
-          <div class="about-details-container">
-            <div class="about-containers">
-              <div class="details-container">
-                <img
-                  src="./assets/experience.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <h3>Experience</h3>
-                <p>2years <br />Frontend Development</p>
-              </div>
-              <div class="details-container">
-                <img
-                  src="./assets/education.png"
-                  alt="Education icon"
-                  class="icon"
-                />
-                <h3>Education</h3>
-                <p>
-                  Bachelor Of Engineering<br />Post Graduate Certification
-                  Program in Cloud Computing
-                </p>
-              </div>
-            </div>
-            <div class="text-container">
-              <p>
-                A front end developer,who is a 2 years experienced Software
-                Engineer, adept in HTML, CSS, Javascript and
-                associated frameworks such as React, for crafting comprehensive
-                user experiences and client-facing landing page interfaces.
-              </p>
-            </div>
-          </div>
-        </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#experience'"
-        />
-      </section>
-      <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="section__text__p1 title">Experience</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h2 class="experience-sub-title">Frontend Development</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <!-- grid -->
-                  <div>
-                    <h3>HTML 5</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>CSS 3</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Bootstrap</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>JavaScript</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>TypeScript</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Material UI</h3>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Frameworks & Other Tools</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>React JS</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Node JS</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>AWS</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Git</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Redux</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Jest</h3>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='#projects'"
-        />
-        <!-- point 2 -->
-      </section>
-      <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container color-container">
-              <div class="article-container project-container">
-                <img
-                  src="./assets/proj1.png"
-                  alt="Project 1"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">
-                Weather Monitor
-              </h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  href="https://github.com/Aparnasayikv/weather-app-react"
-                >
-                  <!-- point 1 -->
-                  <a
-                    href="https://github.com/Aparnasayikv/weather-app-react"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Github</a
-                  >
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container project-container">
-                <img
-                  src="./assets/proj2.png"
-                  alt="Project 2"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">
-                Trading App
-              </h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  href="https://github.com/Aparnasayikv/stock-trading-app"
-                >
-                  <a
-                    href="https://github.com/Aparnasayikv/stock-trading-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Github</a
-                  >
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container project-container">
-                <img
-                  src="./assets/proj4.png"
-                  alt="Project 2"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Landing Page</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  href="https://github.com/Aparnasayikv/pepCreations_rep"
-                >
-                  <a
-                    href="https://github.com/Aparnasayikv/pepCreations_rep"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Github</a
-                  >
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='#contact'"
-        />
-      </section>
-      <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p>
-              <a href="mailto:aparnasayikv1999@gmail.com"
-                >aparnasayikv1999@gmail.com</a
-              >
-            </p>
-          </div>
-          <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com/in/aparnakv/">LinkedIn</a></p>
-          </div>
-        </div>
-      </section>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aparna K V — Full-Stack Developer with 4+ years experience in React.js, TypeScript, Python, FastAPI, and AI-powered web applications." />
+    <title>Aparna K V | Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
 
-      <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
+    <!-- DESKTOP NAV -->
+    <nav id="desktop-nav">
+      <div class="logo">Aparna <span class="logo-dot">KV.</span></div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fa-solid fa-moon theme-icon"></i>
+      </button>
+    </nav>
+
+    <!-- HAMBURGER NAV -->
+    <nav id="hamburger-nav">
+      <div class="logo">Aparna <span class="logo-dot">KV.</span></div>
+      <div class="hamburger-menu">
+        <button class="theme-toggle" id="themeToggleMob" aria-label="Toggle theme" style="margin-right:0.5rem">
+          <i class="fa-solid fa-moon theme-icon"></i>
+        </button>
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="profile">
+      <!-- Animated background layers -->
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="hero-orbs" aria-hidden="true">
+        <div class="orb o1"></div>
+        <div class="orb o2"></div>
+        <div class="orb o3"></div>
+      </div>
+
+      <!-- Floating tech icons -->
+      <div class="floating-icons" aria-hidden="true">
+        <div class="fi react-fi"><i class="fa-brands fa-react"></i></div>
+        <div class="fi python-fi"><i class="fa-brands fa-python"></i></div>
+        <div class="fi js-fi"><i class="fa-brands fa-js"></i></div>
+        <div class="fi node-fi"><i class="fa-brands fa-node-js"></i></div>
+        <div class="fi aws-fi"><i class="fa-brands fa-aws"></i></div>
+        <div class="fi db-fi"><i class="fa-solid fa-database"></i></div>
+        <div class="fi robot-fi"><i class="fa-solid fa-robot"></i></div>
+        <div class="fi git-fi"><i class="fa-brands fa-git-alt"></i></div>
+      </div>
+
+      <!-- Main content -->
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Aparna K V</h1>
+          <p class="hero-title">Full-Stack Developer</p>
+          <div class="hero-typed-line">
+            <span class="typed-text"></span><span class="typed-cursor">|</span>
           </div>
+          <p class="hero-description">
+            Building scalable web applications and AI-powered features with 4+ years of experience across SaaS, geospatial, and healthcare domains.
+          </p>
+          <div class="hero-buttons">
+            <a href="./assets/Aparna Sayi_Front End developer_Nov 2023.pdf" download class="btn btn-primary">
+              <i class="fa-solid fa-download"></i>&nbsp; Download CV
+            </a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/aparnakv/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://github.com/Aparnasayikv" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://aparnasayikv.github.io/React-Portfolio/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Portfolio">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="hero-image-glow"></div>
+          <img src="./assets/female-developer-background_665280-9646.avif" alt="Aparna K V — Full-Stack Developer" class="hero-image" />
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll down">
+        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      </a>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about">
+      <div class="section-header">
+        <p class="section-tag">Get To Know</p>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-stats-col">
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number" data-count="4" data-suffix="+">0+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="2" data-suffix="">0</span>
+              <span class="stat-label">Companies</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="5" data-suffix="+">0+</span>
+              <span class="stat-label">Projects Shipped</span>
+            </div>
+          </div>
+          <div class="about-location">
+            <i class="fa-solid fa-location-dot"></i>
+            Chennai, India &nbsp;·&nbsp; Open to Remote
+          </div>
+          <div class="about-education">
+            <h3 class="edu-section-title">Education</h3>
+            <div class="edu-item">
+              <i class="fa-solid fa-graduation-cap edu-icon"></i>
+              <div>
+                <p class="edu-title">B.E. in Engineering</p>
+                <p class="edu-sub">R V S College of Engineering and Technology, Coimbatore</p>
+              </div>
+            </div>
+            <div class="edu-item">
+              <i class="fa-solid fa-cloud edu-icon"></i>
+              <div>
+                <p class="edu-title">PG Certificate — Cloud Computing</p>
+                <p class="edu-sub">California Institute of Technology (Online)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <p class="about-text">
+            I'm a <strong>Full-Stack Developer</strong> with 4+ years of experience building scalable web and mobile applications. I specialize in <strong>React.js</strong>, <strong>TypeScript</strong>, and <strong>Python (FastAPI)</strong>, with hands-on experience developing AI-powered features including content generation pipelines, grounding/validation workflows, and AI agent development.
+          </p>
+          <p class="about-text">
+            I've shipped production features across <strong>SaaS, geospatial, and healthcare domains</strong> — from an AI-powered CMS platform that generates SEO-optimized landing pages at scale, to a hospital management system digitizing patient admission, billing, and AI-assisted nursing workflows.
+          </p>
+          <p class="about-text">
+            I thrive in <strong>Agile/Scrum teams</strong>, collaborating closely with design, QA, and product stakeholders on API contracts, code reviews, and end-to-end feature delivery.
+          </p>
+          <div class="about-cta">
+            <a href="mailto:aparnasayikv1999@gmail.com" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane"></i>&nbsp; Let's Talk
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" class="bg-alt">
+      <div class="section-header">
+        <p class="section-tag">What I Work With</p>
+        <h2 class="section-title">Tech Stack</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <i class="fa-solid fa-bolt skill-cat-icon"></i> Frontend
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">React.js</span>
+            <span class="skill-tag highlight">TypeScript</span>
+            <span class="skill-tag highlight">JavaScript ES6+</span>
+            <span class="skill-tag">Redux</span>
+            <span class="skill-tag">Context API</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Material UI</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">HTML5 / CSS3</span>
+            <span class="skill-tag">React Native</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <i class="fa-solid fa-server skill-cat-icon"></i> Backend &amp; Databases
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">Python</span>
+            <span class="skill-tag highlight">FastAPI</span>
+            <span class="skill-tag">REST API Design</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <i class="fa-solid fa-robot skill-cat-icon"></i> AI / ML Integration
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">AI Content Generation</span>
+            <span class="skill-tag highlight">AI Agent Development</span>
+            <span class="skill-tag">Grounding &amp; Validation</span>
+            <span class="skill-tag">Content Pipelines</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <i class="fa-solid fa-cloud skill-cat-icon"></i> Cloud, Testing &amp; Tools
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">AWS</span>
+            <span class="skill-tag highlight">Microsoft Azure</span>
+            <span class="skill-tag">Cypress</span>
+            <span class="skill-tag">React Testing Library</span>
+            <span class="skill-tag">CI/CD Pipelines</span>
+            <span class="skill-tag">Git &amp; GitHub</span>
+            <span class="skill-tag">JIRA / Agile</span>
+          </div>
+        </div>
+      </div>
+      <div class="certs-section">
+        <h3 class="certs-title">Certifications</h3>
+        <div class="certs-row">
+          <div class="cert-card"><i class="fa-solid fa-award cert-icon"></i><span>AWS Solution Architect (PGCC)</span></div>
+          <div class="cert-card"><i class="fa-solid fa-award cert-icon"></i><span>Azure Administrator (AZ-104)</span></div>
+          <div class="cert-card"><i class="fa-solid fa-award cert-icon"></i><span>Azure Infrastructure Solutions (AZ-305)</span></div>
+          <div class="cert-card"><i class="fa-solid fa-award cert-icon"></i><span>Oracle SQL Certification</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="experience">
+      <div class="section-header">
+        <p class="section-tag">Work History</p>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <!-- Zylen Solutions -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-title-group">
+                <h3 class="timeline-role">Senior Engineer</h3>
+                <p class="timeline-company">Zylen Solutions Pvt Ltd &nbsp;·&nbsp; Remote</p>
+              </div>
+              <span class="timeline-badge">Nov 2023 – Present</span>
+            </div>
+
+            <div class="timeline-project">
+              <div class="project-label topgeo-label">
+                <i class="fa-solid fa-map-location-dot"></i> TopGeo — AI-Powered Geospatial SaaS Platform
+              </div>
+              <p class="project-label-sub">Enterprise CMS generating AI-driven, SEO-optimized landing pages at scale</p>
+              <ul class="exp-bullets">
+                <li>Built Python FastAPI service powering the CMS's AI content agent, with PostgreSQL-backed endpoints for AI-generated content storage and retrieval.</li>
+                <li>Developed the end-to-end <strong>grounding workflow</strong> (AI generation → validation → user review → approval → publish) and the <strong>Recommended Facts module</strong>, including a fix for rejected facts reappearing.</li>
+                <li>Resolved data-integrity bugs in the Geo Score module (scores resetting to null after re-grounding) and a formatting regression affecting fonts/logos on the summary page.</li>
+                <li>Built a reusable, component-based landing page system supporting independent section-by-section updates across dozens of location pages.</li>
+                <li>Developed React.js / TypeScript / Redux CMS UI; integrated REST APIs with Python backend, collaborating on API contracts and SEO metadata/URL structures.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-project">
+              <div class="project-label healthcare-label">
+                <i class="fa-solid fa-hospital"></i> Zylen Healthcare — Hospital Management System
+              </div>
+              <p class="project-label-sub">Platform digitizing patient admission, bed management, billing, discharge, and AI-assisted nursing</p>
+              <ul class="exp-bullets">
+                <li>Built React.js / TypeScript / Redux modules for patient admission, department selection, and doctor assignment across <strong>5 user roles</strong> (Receptionist, Nurse, Doctor, Admin, Billing Staff).</li>
+                <li>Developed Ward &amp; Bed Management UI (listing, creation, assignment, transfer, status tracking) and resolved production issues in the admission-bed allocation flow.</li>
+                <li>Built Inpatient/Outpatient Billing UI; analyzed Discharge Summary workflow mapping fields across admission, clinical, pharmacy, and lab data.</li>
+                <li>Prepared test scenarios for <strong>Nurse AI</strong> — covering ward rounds, clinical observations, AI-generated notes, and discharge assistance.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- TCS -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-title-group">
+                <h3 class="timeline-role">Software Engineer</h3>
+                <p class="timeline-company">Tata Consultancy Services &nbsp;·&nbsp; Chennai, India</p>
+              </div>
+              <span class="timeline-badge">Feb 2022 – Aug 2023</span>
+            </div>
+            <div class="timeline-project">
+              <div class="project-label tcs-label">
+                <i class="fa-solid fa-building-columns"></i> LBG — UK Banking Platform Digitization &amp; E-Commerce
+              </div>
+              <ul class="exp-bullets">
+                <li>Built a <strong>TDD application</strong> for digitizing a UK-based banking platform, achieving 70% reusable components via front-end microservices architecture.</li>
+                <li>Developed React.js components consuming REST APIs, integrated complex data models and authentication systems.</li>
+                <li>Designed and implemented a dynamic <strong>AI-style playground</strong> with prompt reloading, chat interface, and interactive customer sessions.</li>
+                <li>Wrote unit tests, followed Agile/Scrum, and collaborated with backend teams to integrate and validate REST APIs.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="bg-alt">
+      <div class="section-header">
+        <p class="section-tag">What I've Built</p>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- TopGeo — spans 2 cols, real screenshot -->
+        <div class="project-card project-featured span-2">
+          <div class="project-browser">
+            <div class="browser-bar">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <span class="browser-url">topgeo.ai / dashboard</span>
+            </div>
+            <div class="browser-screen tall">
+              <img src="./assets/topgeo-screenshot.png" class="project-ss" alt="TopGeo AI Platform Dashboard" />
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="proj-tech-row">
+              <span class="proj-tech">React.js</span>
+              <span class="proj-tech">TypeScript</span>
+              <span class="proj-tech">Python</span>
+              <span class="proj-tech">FastAPI</span>
+              <span class="proj-tech">PostgreSQL</span>
+              <span class="proj-tech">AI/ML</span>
+            </div>
+            <h3 class="project-name">TopGeo — AI-Powered Geospatial SaaS</h3>
+            <p class="project-desc">Enterprise CMS platform enabling AI-generated, SEO-optimized landing pages at scale. Built the full grounding workflow, Recommended Facts module, Geo Score system, and a reusable component-based page architecture.</p>
+            <div class="proj-highlights">
+              <span class="proj-highlight">AI Content Agent</span>
+              <span class="proj-highlight">Grounding Workflow</span>
+              <span class="proj-highlight">CMS Page Builder</span>
+              <span class="proj-highlight">SEO Optimization</span>
+            </div>
+            <div class="project-expand" id="expand-topgeo">
+              <div class="expand-inner">
+                <div>
+                  <p class="expand-label">Grounding Workflow</p>
+                  <div class="workflow-steps">
+                    <div class="workflow-step"><span class="step-num">1</span><div><strong>AI Generate</strong><p>FastAPI service triggers AI content generation for location-specific landing pages</p></div></div>
+                    <div class="workflow-step"><span class="step-num">2</span><div><strong>Validate &amp; Ground</strong><p>Facts are validated against authoritative data sources for accuracy</p></div></div>
+                    <div class="workflow-step"><span class="step-num">3</span><div><strong>Review &amp; Approve</strong><p>CMS editors review AI output and approve or flag individual facts</p></div></div>
+                    <div class="workflow-step"><span class="step-num">4</span><div><strong>Publish</strong><p>Approved content goes live on the SEO-optimized location page</p></div></div>
+                  </div>
+                </div>
+                <div>
+                  <p class="expand-label">What I Built</p>
+                  <ul class="expand-bullets">
+                    <li>Python FastAPI service powering the AI content agent with PostgreSQL endpoints</li>
+                    <li>Recommended Facts module — including bug fix for rejected facts reappearing</li>
+                    <li>Geo Score data-integrity fix (scores resetting to null after re-grounding)</li>
+                    <li>Reusable section-based page architecture across dozens of location pages</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <button class="view-more-btn" onclick="toggleExpand('expand-topgeo', this)">
+              <span>View More</span> <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Healthcare — CSS mockup -->
+        <div class="project-card project-featured">
+          <div class="project-browser">
+            <div class="browser-bar">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <span class="browser-url">healthcare.zylen.com</span>
+            </div>
+            <div class="browser-screen tall hc-mockup">
+              <div class="hc-sidebar">
+                <div class="hc-nav active"><i class="fa-solid fa-house-medical"></i></div>
+                <div class="hc-nav"><i class="fa-solid fa-bed-pulse"></i></div>
+                <div class="hc-nav"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                <div class="hc-nav"><i class="fa-solid fa-user-nurse"></i></div>
+                <div class="hc-nav"><i class="fa-solid fa-pills"></i></div>
+              </div>
+              <div class="hc-content">
+                <div class="hc-stats">
+                  <div class="hc-stat"><span class="hc-num">128</span><span class="hc-lbl">Patients</span></div>
+                  <div class="hc-stat"><span class="hc-num">64</span><span class="hc-lbl">Beds</span></div>
+                  <div class="hc-stat"><span class="hc-num">18</span><span class="hc-lbl">Doctors</span></div>
+                </div>
+                <div class="hc-section-title">Recent Admissions</div>
+                <div class="hc-list">
+                  <div class="hc-row"><div class="hc-dot green"></div><div class="hc-line"></div><div class="hc-badge">OPD</div></div>
+                  <div class="hc-row"><div class="hc-dot blue"></div><div class="hc-line short"></div><div class="hc-badge">IPD</div></div>
+                  <div class="hc-row"><div class="hc-dot green"></div><div class="hc-line"></div><div class="hc-badge">OPD</div></div>
+                  <div class="hc-row"><div class="hc-dot yellow"></div><div class="hc-line short"></div><div class="hc-badge">ER</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="proj-tech-row">
+              <span class="proj-tech">React.js</span>
+              <span class="proj-tech">TypeScript</span>
+              <span class="proj-tech">Redux</span>
+              <span class="proj-tech">REST APIs</span>
+              <span class="proj-tech">AI Integration</span>
+            </div>
+            <h3 class="project-name">Zylen Healthcare — Hospital Management</h3>
+            <p class="project-desc">Hospital platform digitizing patient admission, ward/bed management, billing, discharge, and AI-assisted nursing workflows across 5 user roles.</p>
+            <div class="proj-highlights">
+              <span class="proj-highlight">5 User Roles</span>
+              <span class="proj-highlight">Nurse AI Module</span>
+              <span class="proj-highlight">Bed Management</span>
+              <span class="proj-highlight">Billing System</span>
+            </div>
+            <div class="project-expand" id="expand-healthcare">
+              <div class="expand-inner">
+                <div>
+                  <p class="expand-label">5 User Roles</p>
+                  <div class="role-chips">
+                    <span class="role-chip"><i class="fa-solid fa-user-tie"></i> Receptionist</span>
+                    <span class="role-chip"><i class="fa-solid fa-user-nurse"></i> Nurse</span>
+                    <span class="role-chip"><i class="fa-solid fa-user-doctor"></i> Doctor</span>
+                    <span class="role-chip"><i class="fa-solid fa-shield-halved"></i> Admin</span>
+                    <span class="role-chip"><i class="fa-solid fa-file-invoice-dollar"></i> Billing Staff</span>
+                  </div>
+                </div>
+                <div>
+                  <p class="expand-label">Modules Built</p>
+                  <ul class="expand-bullets">
+                    <li>Patient admission &amp; department selection with doctor assignment flow</li>
+                    <li>Ward &amp; Bed Management — listing, creation, assignment, transfer, status tracking</li>
+                    <li>Inpatient/Outpatient Billing UI with discharge summary workflow mapping</li>
+                    <li>Nurse AI test scenarios — ward rounds, clinical observations, AI-generated notes</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <button class="view-more-btn" onclick="toggleExpand('expand-healthcare', this)">
+              <span>View More</span> <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Weather — real screenshot -->
+        <div class="project-card">
+          <div class="project-browser">
+            <div class="browser-bar">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <span class="browser-url">weather-monitor-app</span>
+            </div>
+            <div class="browser-screen">
+              <img src="./assets/proj1.png" class="project-ss" alt="Weather Monitor App" />
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="proj-tech-row">
+              <span class="proj-tech">React.js</span>
+              <span class="proj-tech">OpenWeatherMap API</span>
+              <span class="proj-tech">JavaScript</span>
+            </div>
+            <h3 class="project-name">Weather Monitor</h3>
+            <p class="project-desc">Real-time weather app showing current conditions, temperature, humidity, and wind data by location using the OpenWeatherMap API.</p>
+            <div class="project-links">
+              <a href="https://github.com/Aparnasayikv/weather-app-react" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trading — real screenshot -->
+        <div class="project-card span-2">
+          <div class="project-browser">
+            <div class="browser-bar">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <span class="browser-url">stock-trading-king</span>
+            </div>
+            <div class="browser-screen">
+              <img src="./assets/proj2.png" class="project-ss" alt="Stock Trading App" />
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="proj-tech-row">
+              <span class="proj-tech">React.js</span>
+              <span class="proj-tech">Redux</span>
+              <span class="proj-tech">Stock API</span>
+            </div>
+            <h3 class="project-name">Stock Trading App</h3>
+            <p class="project-desc">Stock trading simulation with live portfolio tracking, real-time price changes, and tabular market data for GOOGL, MSFT, and more.</p>
+            <div class="project-links">
+              <a href="https://github.com/Aparnasayikv/stock-trading-app" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact">
+      <div class="section-header">
+        <p class="section-tag">Let's Connect</p>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <p class="contact-intro">
+        Open to new opportunities — whether it's a role, a project, or just a conversation. Feel free to reach out!
+      </p>
+      <div class="contact-grid">
+        <a href="mailto:aparnasayikv1999@gmail.com" class="contact-card">
+          <div class="contact-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">Email</p>
+            <p class="contact-value">aparnasayikv1999@gmail.com</p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/aparnakv/" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">LinkedIn</p>
+            <p class="contact-value">linkedin.com/in/aparnakv</p>
+          </div>
+        </a>
+        <a href="https://github.com/Aparnasayikv" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-icon-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">GitHub</p>
+            <p class="contact-value">github.com/Aparnasayikv</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-logo">Aparna <span class="logo-dot">KV.</span></div>
+        <nav class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </nav>
-        <p>Copyright &#169; 2023 Aparna K V. All Rights Reserved.</p>
-      </footer>
+        <p class="footer-copy">© 2024 Aparna K V. All Rights Reserved.</p>
+      </div>
+    </footer>
 
-      <script src="script.js"></script>
-    </body>
-  </html>
+    <script src="script.js"></script>
+  </body>
 </html>
