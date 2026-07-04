@@ -84,7 +84,7 @@ strong { color: var(--text); font-weight: 600; }
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
 }
-.hamburger-menu { position: relative; }
+.hamburger-menu { position: relative; display: flex; align-items: center; gap: 0.6rem; }
 .hamburger-icon { display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: 5px; }
 .hamburger-icon span { width: 25px; height: 2px; background: var(--text); border-radius: 2px; transition: var(--ease); }
 .hamburger-icon.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
