@@ -573,8 +573,8 @@ footer { background: var(--bg-alt); border-top: 1px solid var(--border); padding
    SCROLL ANIMATIONS
    ============================================= */
 
-/* Section headers start hidden, animate in */
-.section-header {
+/* Section headers — hidden only when JS adds .pre-anim (safe without JS) */
+.section-header.pre-anim {
   opacity: 0;
   transform: translateY(28px);
   transition: opacity 0.65s ease, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);

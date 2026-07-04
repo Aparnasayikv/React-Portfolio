@@ -76,7 +76,10 @@ const animObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.09 });
 
 // Section headers — title reveal + shimmer tingle
-document.querySelectorAll(".section-header").forEach(el => animObserver.observe(el));
+document.querySelectorAll(".section-header").forEach(el => {
+  el.classList.add("pre-anim");
+  animObserver.observe(el);
+});
 
 // About columns — slide in from opposite sides
 const statCol = document.querySelector(".about-stats-col");
