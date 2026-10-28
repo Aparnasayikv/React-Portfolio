@@ -1,582 +1,392 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Aparna K V — Full-Stack Developer with 4+ years experience in React.js, TypeScript, Python, FastAPI, and AI-powered web applications." />
-    <title>Aparna K V | Full-Stack Developer</title>
+    <meta name="description" content="Aparna K V — Full-Stack Developer (React.js | Python) with 4+ years of experience in React.js, Next.js, TypeScript and Python." />
+    <meta name="theme-color" content="#e2491c" />
+    <title>Aparna K V | Full-Stack Developer (React.js · Python)</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23e2491c'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='800' font-size='28' text-anchor='middle' fill='%23fbf3e8'%3EAK%3C/text%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Yellowtail&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="stylesheet" href="style.css?v=2" />
-    <link rel="stylesheet" href="mediaqueries.css?v=2" />
+    <link rel="stylesheet" href="style.css?v=11" />
+    <link rel="stylesheet" href="mediaqueries.css?v=11" />
   </head>
   <body>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
-    <!-- DESKTOP NAV -->
-    <nav id="desktop-nav">
-      <div class="logo">Aparna <span class="logo-dot">KV.</span></div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <i class="fa-solid fa-moon theme-icon"></i>
-      </button>
-    </nav>
-
-    <!-- HAMBURGER NAV -->
-    <nav id="hamburger-nav">
-      <div class="logo">Aparna <span class="logo-dot">KV.</span></div>
-      <div class="hamburger-menu">
-        <button class="theme-toggle" id="themeToggleMob" aria-label="Toggle theme">
-          <i class="fa-solid fa-moon theme-icon"></i>
-        </button>
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span><span></span><span></span>
-        </div>
-        <ul class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </ul>
+    <!-- NAV -->
+    <header class="nav">
+      <a href="#profile" class="logo">Aparna</a>
+      <nav class="nav-pill" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
       </div>
-    </nav>
+    </header>
 
-    <!-- ===================== HERO ===================== -->
-    <section id="profile">
-      <!-- Animated background layers -->
-      <div class="hero-grid-bg" aria-hidden="true"></div>
-      <div class="hero-orbs" aria-hidden="true">
-        <div class="orb o1"></div>
-        <div class="orb o2"></div>
-        <div class="orb o3"></div>
-      </div>
+    <div class="mobile-menu" aria-hidden="true">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
 
-      <!-- Floating tech icons -->
-      <div class="floating-icons" aria-hidden="true">
-        <div class="fi react-fi"><i class="fa-brands fa-react"></i></div>
-        <div class="fi python-fi"><i class="fa-brands fa-python"></i></div>
-        <div class="fi js-fi"><i class="fa-brands fa-js"></i></div>
-        <div class="fi node-fi"><i class="fa-brands fa-node-js"></i></div>
-        <div class="fi aws-fi"><i class="fa-brands fa-aws"></i></div>
-        <div class="fi db-fi"><i class="fa-solid fa-database"></i></div>
-        <div class="fi robot-fi"><i class="fa-solid fa-robot"></i></div>
-        <div class="fi git-fi"><i class="fa-brands fa-git-alt"></i></div>
-      </div>
-
-      <!-- Main content -->
-      <div class="hero-content">
-        <div class="hero-text">
-          <p class="hero-greeting">Hello, I'm</p>
-          <h1 class="hero-name">Aparna K V</h1>
-          <p class="hero-title">Full-Stack Developer</p>
-          <div class="hero-typed-line">
-            <span class="typed-text"></span><span class="typed-cursor">|</span>
-          </div>
-          <p class="hero-description">
-            Building scalable web applications and AI-powered features with 4+ years of experience across SaaS, geospatial, and healthcare domains.
-          </p>
-          <div class="hero-buttons">
-            <a href="./assets/Aparna Sayi_Front End developer_Nov 2023.pdf" download class="btn btn-primary">
-              <i class="fa-solid fa-download"></i>&nbsp; Download CV
-            </a>
-            <a href="#contact" class="btn btn-secondary">Contact Me</a>
-          </div>
-          <div class="hero-socials">
-            <a href="https://www.linkedin.com/in/aparnakv/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-            <a href="https://github.com/Aparnasayikv" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-            </a>
-            <a href="https://aparnasayikv.github.io/React-Portfolio/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Portfolio">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="hero-image-wrapper">
-          <div class="hero-image-glow"></div>
-          <img src="./assets/female-developer-background_665280-9646.avif" alt="Aparna K V — Full-Stack Developer" class="hero-image" />
-        </div>
-      </div>
-
-      <a href="#about" class="scroll-hint" aria-label="Scroll down">
-        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
-      </a>
-    </section>
-
-    <!-- ===================== ABOUT ===================== -->
-    <section id="about">
-      <div class="section-header">
-        <p class="section-tag">Get To Know</p>
-        <h2 class="section-title">About Me</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-stats-col">
-          <div class="about-stats">
-            <div class="stat-card">
-              <span class="stat-number" data-count="4" data-suffix="+">0+</span>
-              <span class="stat-label">Years Experience</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number" data-count="2" data-suffix="">0</span>
-              <span class="stat-label">Companies</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number" data-count="5" data-suffix="+">0+</span>
-              <span class="stat-label">Projects Shipped</span>
-            </div>
-          </div>
-          <div class="about-location">
-            <i class="fa-solid fa-location-dot"></i>
-            Chennai, India &nbsp;·&nbsp; Open to Remote
-          </div>
-          <div class="about-education">
-            <h3 class="edu-section-title">Education</h3>
-            <div class="edu-item">
-              <i class="fa-solid fa-graduation-cap edu-icon"></i>
-              <div>
-                <p class="edu-title">B.E. in Engineering</p>
-                <p class="edu-sub">R V S College of Engineering and Technology, Coimbatore</p>
-              </div>
-            </div>
-            <div class="edu-item">
-              <i class="fa-solid fa-cloud edu-icon"></i>
-              <div>
-                <p class="edu-title">PG Certificate — Cloud Computing</p>
-                <p class="edu-sub">California Institute of Technology (Online)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="about-text-col">
-          <p class="about-text">
-            I'm a <strong>Full-Stack Developer</strong> with 4+ years of experience building scalable web and mobile applications. I specialize in <strong>React.js</strong>, <strong>TypeScript</strong>, and <strong>Python (FastAPI)</strong>, with hands-on experience developing AI-powered features including content generation pipelines, grounding/validation workflows, and AI agent development.
-          </p>
-          <p class="about-text">
-            I've shipped production features across <strong>SaaS, geospatial, and healthcare domains</strong> — from an AI-powered CMS platform that generates SEO-optimized landing pages at scale, to a hospital management system digitizing patient admission, billing, and AI-assisted nursing workflows.
-          </p>
-          <p class="about-text">
-            I thrive in <strong>Agile/Scrum teams</strong>, collaborating closely with design, QA, and product stakeholders on API contracts, code reviews, and end-to-end feature delivery.
-          </p>
-          <div class="about-cta">
-            <a href="mailto:aparnasayikv1999@gmail.com" class="btn btn-primary">
-              <i class="fa-solid fa-paper-plane"></i>&nbsp; Let's Talk
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== SKILLS ===================== -->
-    <section id="skills" class="bg-alt">
-      <div class="section-header">
-        <p class="section-tag">What I Work With</p>
-        <h2 class="section-title">Tech Stack</h2>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3 class="skill-cat-title">
-            <i class="fa-solid fa-bolt skill-cat-icon"></i> Frontend
-          </h3>
-          <div class="skill-tags">
-            <span class="skill-tag highlight">React.js</span>
-            <span class="skill-tag highlight">TypeScript</span>
-            <span class="skill-tag highlight">JavaScript ES6+</span>
-            <span class="skill-tag">Redux</span>
-            <span class="skill-tag">Context API</span>
-            <span class="skill-tag">Tailwind CSS</span>
-            <span class="skill-tag">Material UI</span>
-            <span class="skill-tag">Bootstrap</span>
-            <span class="skill-tag">HTML5 / CSS3</span>
-            <span class="skill-tag">React Native</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3 class="skill-cat-title">
-            <i class="fa-solid fa-server skill-cat-icon"></i> Backend &amp; Databases
-          </h3>
-          <div class="skill-tags">
-            <span class="skill-tag highlight">Python</span>
-            <span class="skill-tag highlight">FastAPI</span>
-            <span class="skill-tag">REST API Design</span>
-            <span class="skill-tag">PostgreSQL</span>
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">SQL</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3 class="skill-cat-title">
-            <i class="fa-solid fa-robot skill-cat-icon"></i> AI / ML Integration
-          </h3>
-          <div class="skill-tags">
-            <span class="skill-tag highlight">AI Content Generation</span>
-            <span class="skill-tag highlight">AI Agent Development</span>
-            <span class="skill-tag">Grounding &amp; Validation</span>
-            <span class="skill-tag">Content Pipelines</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3 class="skill-cat-title">
-            <i class="fa-solid fa-cloud skill-cat-icon"></i> Cloud, Testing &amp; Tools
-          </h3>
-          <div class="skill-tags">
-            <span class="skill-tag highlight">AWS</span>
-            <span class="skill-tag highlight">Microsoft Azure</span>
-            <span class="skill-tag">Cypress</span>
-            <span class="skill-tag">React Testing Library</span>
-            <span class="skill-tag">CI/CD Pipelines</span>
-            <span class="skill-tag">Git &amp; GitHub</span>
-            <span class="skill-tag">JIRA / Agile</span>
-          </div>
-        </div>
-      </div>
-      <div class="certs-section">
-        <h3 class="certs-title">Certifications</h3>
-        <div class="certs-row">
-          <div class="cert-card"><i class="fa-solid fa-award cert-icon"></i><span>AWS Solution Architect (PGCC)</span></div>
-          <div class="cert-card"><i class="fa-solid fa-award cert-icon"></i><span>Azure Administrator (AZ-104)</span></div>
-          <div class="cert-card"><i class="fa-solid fa-award cert-icon"></i><span>Azure Infrastructure Solutions (AZ-305)</span></div>
-          <div class="cert-card"><i class="fa-solid fa-award cert-icon"></i><span>Oracle SQL Certification</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== EXPERIENCE ===================== -->
-    <section id="experience">
-      <div class="section-header">
-        <p class="section-tag">Work History</p>
-        <h2 class="section-title">Experience</h2>
-      </div>
-      <div class="timeline">
-
-        <!-- Zylen Solutions -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div class="timeline-title-group">
-                <h3 class="timeline-role">Senior Engineer</h3>
-                <p class="timeline-company">Zylen Solutions Pvt Ltd &nbsp;·&nbsp; Remote</p>
-              </div>
-              <span class="timeline-badge">Nov 2023 – Present</span>
-            </div>
-
-            <div class="timeline-project">
-              <div class="project-label topgeo-label">
-                <i class="fa-solid fa-map-location-dot"></i> TopGeo — AI-Powered Geospatial SaaS Platform
-              </div>
-              <p class="project-label-sub">Enterprise CMS generating AI-driven, SEO-optimized landing pages at scale</p>
-              <ul class="exp-bullets">
-                <li>Built Python FastAPI service powering the CMS's AI content agent, with PostgreSQL-backed endpoints for AI-generated content storage and retrieval.</li>
-                <li>Developed the end-to-end <strong>grounding workflow</strong> (AI generation → validation → user review → approval → publish) and the <strong>Recommended Facts module</strong>, including a fix for rejected facts reappearing.</li>
-                <li>Resolved data-integrity bugs in the Geo Score module (scores resetting to null after re-grounding) and a formatting regression affecting fonts/logos on the summary page.</li>
-                <li>Built a reusable, component-based landing page system supporting independent section-by-section updates across dozens of location pages.</li>
-                <li>Developed React.js / TypeScript / Redux CMS UI; integrated REST APIs with Python backend, collaborating on API contracts and SEO metadata/URL structures.</li>
-              </ul>
-            </div>
-
-            <div class="timeline-project">
-              <div class="project-label healthcare-label">
-                <i class="fa-solid fa-hospital"></i> Zylen Healthcare — Hospital Management System
-              </div>
-              <p class="project-label-sub">Platform digitizing patient admission, bed management, billing, discharge, and AI-assisted nursing</p>
-              <ul class="exp-bullets">
-                <li>Built React.js / TypeScript / Redux modules for patient admission, department selection, and doctor assignment across <strong>5 user roles</strong> (Receptionist, Nurse, Doctor, Admin, Billing Staff).</li>
-                <li>Developed Ward &amp; Bed Management UI (listing, creation, assignment, transfer, status tracking) and resolved production issues in the admission-bed allocation flow.</li>
-                <li>Built Inpatient/Outpatient Billing UI; analyzed Discharge Summary workflow mapping fields across admission, clinical, pharmacy, and lab data.</li>
-                <li>Prepared test scenarios for <strong>Nurse AI</strong> — covering ward rounds, clinical observations, AI-generated notes, and discharge assistance.</li>
-              </ul>
-            </div>
-          </div>
+    <main>
+      <!-- ===================== HERO ===================== -->
+      <section id="profile" class="hero">
+        <div class="hero-bg" aria-hidden="true">
+          <span class="hero-outline">APARNA</span>
+          <span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span><span class="spark s4"></span>
         </div>
 
-        <!-- TCS -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div class="timeline-title-group">
-                <h3 class="timeline-role">Software Engineer</h3>
-                <p class="timeline-company">Tata Consultancy Services &nbsp;·&nbsp; Chennai, India</p>
-              </div>
-              <span class="timeline-badge">Feb 2022 – Aug 2023</span>
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="pulse-dot"></span> Available for new opportunities</p>
+            <p class="hi">Hi, I'm</p>
+            <h1 class="script-name" aria-label="Aparna K V"><span class="ink">Aparna</span></h1>
+            <p class="hero-role">Full-Stack Developer <span class="role-split">React.js | Python</span></p>
+            <p class="hero-desc">4+ years building scalable web platforms and AI-powered features across SaaS, geospatial, healthcare and public-sector products.</p>
+            <div class="hero-buttons">
+              <a href="#contact" class="pill pill-outline magnetic">Let's talk</a>
+              <a href="./assets/Aparna_KV_Resume%202026%20.pdf" download="Aparna_KV_Resume_2026.pdf" class="pill pill-solid magnetic"><i class="fa-solid fa-download"></i> Download CV</a>
             </div>
-            <div class="timeline-project">
-              <div class="project-label tcs-label">
-                <i class="fa-solid fa-building-columns"></i> LBG — UK Banking Platform Digitization &amp; E-Commerce
-              </div>
-              <ul class="exp-bullets">
-                <li>Built a <strong>TDD application</strong> for digitizing a UK-based banking platform, achieving 70% reusable components via front-end microservices architecture.</li>
-                <li>Developed React.js components consuming REST APIs, integrated complex data models and authentication systems.</li>
-                <li>Designed and implemented a dynamic <strong>AI-style playground</strong> with prompt reloading, chat interface, and interactive customer sessions.</li>
-                <li>Wrote unit tests, followed Agile/Scrum, and collaborated with backend teams to integrate and validate REST APIs.</li>
-              </ul>
+            <div class="hero-socials">
+              <a href="https://www.linkedin.com/in/aparnakv/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://github.com/Aparnasayikv" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="mailto:aparnasayikv1999@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
             </div>
           </div>
-        </div>
 
-      </div>
-    </section>
-
-    <!-- ===================== PROJECTS ===================== -->
-    <section id="projects" class="bg-alt">
-      <div class="section-header">
-        <p class="section-tag">What I've Built</p>
-        <h2 class="section-title">Projects</h2>
-      </div>
-      <div class="projects-grid">
-
-        <!-- TopGeo — spans 2 cols, real screenshot -->
-        <div class="project-card project-featured span-2">
-          <div class="project-browser">
-            <div class="browser-bar">
-              <div class="browser-dots"><span></span><span></span><span></span></div>
-              <span class="browser-url">topgeo.ai / dashboard</span>
-            </div>
-            <div class="browser-screen tall">
-              <img src="./assets/topgeo-screenshot.png" class="project-ss" alt="TopGeo AI Platform Dashboard" />
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="proj-tech-row">
-              <span class="proj-tech">React.js</span>
-              <span class="proj-tech">TypeScript</span>
-              <span class="proj-tech">Python</span>
-              <span class="proj-tech">FastAPI</span>
-              <span class="proj-tech">PostgreSQL</span>
-              <span class="proj-tech">AI/ML</span>
-            </div>
-            <h3 class="project-name">TopGeo — AI-Powered Geospatial SaaS</h3>
-            <p class="project-desc">Enterprise CMS platform enabling AI-generated, SEO-optimized landing pages at scale. Built the full grounding workflow, Recommended Facts module, Geo Score system, and a reusable component-based page architecture.</p>
-            <div class="proj-highlights">
-              <span class="proj-highlight">AI Content Agent</span>
-              <span class="proj-highlight">Grounding Workflow</span>
-              <span class="proj-highlight">CMS Page Builder</span>
-              <span class="proj-highlight">SEO Optimization</span>
-            </div>
-            <div class="project-expand" id="expand-topgeo">
-              <div class="expand-inner">
-                <div>
-                  <p class="expand-label">Grounding Workflow</p>
-                  <div class="workflow-steps">
-                    <div class="workflow-step"><span class="step-num">1</span><div><strong>AI Generate</strong><p>FastAPI service triggers AI content generation for location-specific landing pages</p></div></div>
-                    <div class="workflow-step"><span class="step-num">2</span><div><strong>Validate &amp; Ground</strong><p>Facts are validated against authoritative data sources for accuracy</p></div></div>
-                    <div class="workflow-step"><span class="step-num">3</span><div><strong>Review &amp; Approve</strong><p>CMS editors review AI output and approve or flag individual facts</p></div></div>
-                    <div class="workflow-step"><span class="step-num">4</span><div><strong>Publish</strong><p>Approved content goes live on the SEO-optimized location page</p></div></div>
+          <!-- Laptop: "laptop" 3D render from Pixabay (Pixabay Content License); the screen content is live HTML -->
+          <div class="laptop-stage">
+            <div class="halo" aria-hidden="true"></div>
+            <div class="laptop-floor" aria-hidden="true"></div>
+            <div class="laptop-tilt">
+              <div class="laptop" aria-hidden="true">
+                <img class="laptop-img" src="./assets/hero-laptop.png" alt="" fetchpriority="high" />
+                <span class="laptop-light"></span>
+                <div class="laptop-screen">
+                  <div class="ls-bar"><span class="ls-dots"><i></i><i></i><i></i></span><span class="ls-tab">summarise.ts</span><span class="ls-tab off">needs.service.ts</span></div>
+                  <div class="ls-body">
+                    <pre class="ls-code"><code></code><span class="ls-caret"></span></pre>
+                    <div class="ls-side">
+                      <div class="ai-card">
+                        <p class="ai-card-head"><i class="fa-solid fa-wand-magic-sparkles"></i> AI suggestion</p>
+                        <p class="ai-card-title">Health › Access to care</p>
+                        <div class="ai-meter"><span></span></div>
+                        <p class="ai-card-meta">Confidence 0.92 · 3 sources</p>
+                        <div class="ai-card-actions"><span class="ok"><i class="fa-solid fa-check"></i> Approve</span><span>Edit</span></div>
+                      </div>
+                      <div class="ls-chart"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                    </div>
                   </div>
                 </div>
-                <div>
-                  <p class="expand-label">What I Built</p>
-                  <ul class="expand-bullets">
-                    <li>Python FastAPI service powering the AI content agent with PostgreSQL endpoints</li>
-                    <li>Recommended Facts module — including bug fix for rejected facts reappearing</li>
-                    <li>Geo Score data-integrity fix (scores resetting to null after re-grounding)</li>
-                    <li>Reusable section-based page architecture across dozens of location pages</li>
+              </div>
+            </div>
+            <div class="float-chip fc1"><b>4+</b> years building<br />for the web</div>
+            <div class="float-chip fc2"><i class="fa-solid fa-wand-magic-sparkles"></i> AI · React · Python</div>
+          </div>
+        </div>
+
+        <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+      </section>
+
+      <!-- ===================== ABOUT ===================== -->
+      <section id="about" class="curtain">
+        <div class="wrap about-grid">
+          <div class="about-head">
+            <p class="section-tag">About me</p>
+            <h2 class="section-title reveal">Full-stack engineer, <em>building AI people can trust.</em></h2>
+            <div class="about-stats">
+              <div class="stat-card tilt" data-tilt><span class="stat-number" data-count="4" data-suffix="+">4+</span><span class="stat-label">Years experience</span></div>
+              <div class="stat-card tilt" data-tilt><span class="stat-number" data-count="2" data-suffix="">2</span><span class="stat-label">Companies</span></div>
+              <div class="stat-card tilt" data-tilt><span class="stat-number" data-count="5" data-suffix="+">5+</span><span class="stat-label">Products shipped</span></div>
+            </div>
+          </div>
+          <div class="about-body">
+            <p class="about-text reveal">
+              I'm a <strong>Full-Stack Developer</strong> with 4+ years of experience building scalable web and mobile applications with <strong>React.js</strong>, <strong>Next.js</strong>, <strong>TypeScript</strong> and <strong>Python (FastAPI)</strong>, backed by REST APIs and <strong>PostgreSQL</strong>.
+            </p>
+            <p class="about-text reveal">
+              My focus is AI that teams can rely on: <strong>LLM-powered classification, summarisation and recommendations</strong>, content generation with grounding and validation, and AI agent workflows — always with human review and an audit trail.
+            </p>
+            <p class="about-text reveal">
+              I've shipped production features across <strong>SaaS, geospatial, healthcare and public-sector</strong> products, working in Agile/Scrum teams with design, QA and product.
+            </p>
+            <div class="edu-list">
+              <div class="edu-item reveal"><i class="fa-solid fa-graduation-cap"></i><div><p class="edu-title">B.E. in Engineering</p><p class="edu-sub">R V S College of Engineering and Technology, Coimbatore</p></div></div>
+              <div class="edu-item reveal"><i class="fa-solid fa-cloud"></i><div><p class="edu-title">PG Certificate — Cloud Computing</p><p class="edu-sub">Simplilearn (Online)</p></div></div>
+              <div class="edu-item reveal"><i class="fa-solid fa-location-dot"></i><div><p class="edu-title">Chennai, India</p><p class="edu-sub">Open to remote and hybrid roles</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== SKILLS ===================== -->
+      <section id="skills">
+        <div class="wrap">
+          <div class="section-header">
+            <p class="section-tag">What I work with</p>
+            <h2 class="section-title" data-split>Tech stack</h2>
+          </div>
+          <div class="skills-grid">
+            <div>
+              <div class="flavor-tabs" role="tablist" aria-label="Skill categories">
+                <button class="flavor-tab active" role="tab" aria-selected="true" data-flavor="frontend"><i class="fa-solid fa-display"></i> Frontend</button>
+                <button class="flavor-tab" role="tab" aria-selected="false" data-flavor="backend"><i class="fa-solid fa-server"></i> Backend</button>
+                <button class="flavor-tab" role="tab" aria-selected="false" data-flavor="ai"><i class="fa-solid fa-wand-magic-sparkles"></i> AI / ML</button>
+                <button class="flavor-tab" role="tab" aria-selected="false" data-flavor="cloud"><i class="fa-solid fa-vial-circle-check"></i> Cloud &amp; Testing</button>
+              </div>
+              <div class="flavor-panels">
+                <div class="flavor-panel active" data-panel="frontend" role="tabpanel">
+                  <p class="panel-blurb">Fast, accessible interfaces — in any language direction.</p>
+                  <div class="skill-tags">
+                    <span class="skill-tag hot">React.js</span><span class="skill-tag hot">Next.js</span><span class="skill-tag hot">TypeScript</span>
+                    <span class="skill-tag">JavaScript ES6+</span><span class="skill-tag">Redux</span><span class="skill-tag">Context API</span><span class="skill-tag">Tailwind CSS</span>
+                    <span class="skill-tag">Material UI</span><span class="skill-tag">React Native</span><span class="skill-tag">Arabic RTL / i18n</span><span class="skill-tag">HTML5 / CSS3</span>
+                  </div>
+                </div>
+                <div class="flavor-panel" data-panel="backend" role="tabpanel">
+                  <p class="panel-blurb">Secure APIs and reliable data behind every screen.</p>
+                  <div class="skill-tags">
+                    <span class="skill-tag hot">Python</span><span class="skill-tag hot">FastAPI</span><span class="skill-tag hot">PostgreSQL</span>
+                    <span class="skill-tag">Prisma</span><span class="skill-tag">Node.js</span><span class="skill-tag">REST API Design</span><span class="skill-tag">SQL</span>
+                    <span class="skill-tag">RBAC &amp; Row-Level Security</span><span class="skill-tag">Multi-tenancy</span><span class="skill-tag">MFA &amp; Audit Logging</span>
+                  </div>
+                </div>
+                <div class="flavor-panel" data-panel="ai" role="tabpanel">
+                  <p class="panel-blurb">AI features that are grounded, reviewable and shippable.</p>
+                  <div class="skill-tags">
+                    <span class="skill-tag hot">LLM APIs</span><span class="skill-tag hot">AI Agent Workflows</span><span class="skill-tag hot">Human-in-the-loop Review</span>
+                    <span class="skill-tag">Prompt Design</span><span class="skill-tag">Classification &amp; Summarisation</span><span class="skill-tag">Semantic Duplicate Detection</span>
+                    <span class="skill-tag">AI Content Generation</span><span class="skill-tag">Grounding &amp; Validation</span>
+                  </div>
+                </div>
+                <div class="flavor-panel" data-panel="cloud" role="tabpanel">
+                  <p class="panel-blurb">Tested end to end, deployed to the cloud.</p>
+                  <div class="skill-tags">
+                    <span class="skill-tag hot">Playwright</span><span class="skill-tag hot">AWS</span><span class="skill-tag hot">Microsoft Azure</span>
+                    <span class="skill-tag">Cypress</span><span class="skill-tag">React Testing Library</span><span class="skill-tag">CI/CD Pipelines</span><span class="skill-tag">Git &amp; GitHub</span><span class="skill-tag">JIRA / Agile</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 class="certs-title">Certifications</h3>
+              <div class="certs-row">
+                <div class="cert-card tilt" data-tilt><i class="fa-brands fa-aws"></i><span><b class="cert-name">AWS Solution Architect (PGCC)</b><small class="cert-by">Simplilearn</small></span></div>
+                <div class="cert-card tilt" data-tilt><i class="fa-brands fa-microsoft"></i><span><b class="cert-name">Azure Administrator (AZ-104)</b><small class="cert-by">Simplilearn</small></span></div>
+                <div class="cert-card tilt" data-tilt><i class="fa-brands fa-microsoft"></i><span><b class="cert-name">Azure Infrastructure Solutions (AZ-305)</b><small class="cert-by">Simplilearn</small></span></div>
+                <div class="cert-card tilt" data-tilt><i class="fa-solid fa-database"></i><span><b class="cert-name">Oracle SQL Certification</b><small class="cert-by">Simplilearn</small></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== EXPERIENCE (chocolate band) ===================== -->
+      <section id="experience" class="band">
+        <div class="wrap exp-wrap">
+          <div class="section-header">
+            <p class="section-tag">Work history</p>
+            <h2 class="section-title" data-split>Experience</h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-line"><span class="timeline-fill"></span></div>
+
+            <article class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div><h3 class="timeline-role">Senior Engineer</h3><p class="timeline-company">Zylen Solutions Pvt Ltd · Remote</p></div>
+                  <span class="timeline-badge">Nov 2023 – Present</span>
+                </div>
+                <div class="timeline-project">
+                  <div class="project-label"><i class="fa-solid fa-people-group"></i> RIO — Community Needs Assessment Platform (Saudi Arabia)</div>
+                  <p class="project-label-sub">Multi-tenant, bilingual (Arabic/English) platform for non-profits · Next.js, TypeScript, PostgreSQL, Prisma, LLM APIs</p>
+                  <ul class="exp-bullets">
+                    <li>Built <strong>AI features</strong> for need classification, KPI and survey-question recommendation, text summarisation and semantic duplicate detection — every AI suggestion goes through human review, with both the suggestion and the reviewer's decision stored for audit.</li>
+                    <li>Designed <strong>confidence-aware prompt rules</strong> so LLM-generated summaries adapt to data quality and never overstate weak evidence.</li>
+                    <li>Delivered full <strong>Arabic RTL</strong> support across the app and exported PDF/Excel reports, including Arabic text shaping and mirrored layouts.</li>
+                    <li>Implemented role-based access for <strong>10 roles</strong>, row-level tenant isolation, MFA and audit logging, plus an explainable priority-scoring engine with versioned methodology and approval workflow.</li>
+                    <li>Ran <strong>Playwright</strong> end-to-end regression across all roles in both languages (250+ checks) and raised backend test coverage to ~90%.</li>
+                  </ul>
+                </div>
+                <div class="timeline-project">
+                  <div class="project-label"><i class="fa-solid fa-map-location-dot"></i> TopGeo — AI-Powered Geospatial SaaS Platform</div>
+                  <p class="project-label-sub">Enterprise CMS generating AI-driven, SEO-optimized landing pages at scale</p>
+                  <ul class="exp-bullets">
+                    <li>Built Python FastAPI service powering the CMS's AI content agent, with PostgreSQL-backed endpoints for AI-generated content storage and retrieval.</li>
+                    <li>Developed the end-to-end <strong>grounding workflow</strong> (AI generation → validation → user review → approval → publish) and the <strong>Recommended Facts module</strong>, including a fix for rejected facts reappearing.</li>
+                    <li>Resolved data-integrity bugs in the Geo Score module (scores resetting to null after re-grounding) and a formatting regression affecting fonts/logos on the summary page.</li>
+                    <li>Built a reusable, component-based landing page system supporting independent section-by-section updates across dozens of location pages.</li>
+                    <li>Developed React.js / TypeScript / Redux CMS UI; integrated REST APIs with Python backend, collaborating on API contracts and SEO metadata/URL structures.</li>
+                  </ul>
+                </div>
+                <div class="timeline-project">
+                  <div class="project-label"><i class="fa-solid fa-hospital"></i> Zylen Healthcare — Hospital Management System</div>
+                  <p class="project-label-sub">Platform digitizing patient admission, bed management, billing, discharge, and AI-assisted nursing</p>
+                  <ul class="exp-bullets">
+                    <li>Built React.js / TypeScript / Redux modules for patient admission, department selection, and doctor assignment across <strong>5 user roles</strong> (Receptionist, Nurse, Doctor, Admin, Billing Staff).</li>
+                    <li>Developed Ward &amp; Bed Management UI (listing, creation, assignment, transfer, status tracking) and resolved production issues in the admission-bed allocation flow.</li>
+                    <li>Built Inpatient/Outpatient Billing UI; analyzed Discharge Summary workflow mapping fields across admission, clinical, pharmacy, and lab data.</li>
+                    <li>Prepared test scenarios for <strong>Nurse AI</strong> — covering ward rounds, clinical observations, AI-generated notes, and discharge assistance.</li>
                   </ul>
                 </div>
               </div>
-            </div>
-            <button class="view-more-btn" onclick="toggleExpand('expand-topgeo', this)">
-              <span>View More</span> <i class="fa-solid fa-chevron-down"></i>
-            </button>
-          </div>
-        </div>
+            </article>
 
-        <!-- Healthcare — CSS mockup -->
-        <div class="project-card project-featured">
-          <div class="project-browser">
-            <div class="browser-bar">
-              <div class="browser-dots"><span></span><span></span><span></span></div>
-              <span class="browser-url">healthcare.zylen.com</span>
-            </div>
-            <div class="browser-screen tall hc-mockup">
-              <div class="hc-sidebar">
-                <div class="hc-nav active"><i class="fa-solid fa-house-medical"></i></div>
-                <div class="hc-nav"><i class="fa-solid fa-bed-pulse"></i></div>
-                <div class="hc-nav"><i class="fa-solid fa-file-invoice-dollar"></i></div>
-                <div class="hc-nav"><i class="fa-solid fa-user-nurse"></i></div>
-                <div class="hc-nav"><i class="fa-solid fa-pills"></i></div>
-              </div>
-              <div class="hc-content">
-                <div class="hc-stats">
-                  <div class="hc-stat"><span class="hc-num">128</span><span class="hc-lbl">Patients</span></div>
-                  <div class="hc-stat"><span class="hc-num">64</span><span class="hc-lbl">Beds</span></div>
-                  <div class="hc-stat"><span class="hc-num">18</span><span class="hc-lbl">Doctors</span></div>
+            <article class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div><h3 class="timeline-role">Software Engineer</h3><p class="timeline-company">Tata Consultancy Services · Chennai, India</p></div>
+                  <span class="timeline-badge">Feb 2022 – Aug 2023</span>
                 </div>
-                <div class="hc-section-title">Recent Admissions</div>
-                <div class="hc-list">
-                  <div class="hc-row"><div class="hc-dot green"></div><div class="hc-line"></div><div class="hc-badge">OPD</div></div>
-                  <div class="hc-row"><div class="hc-dot blue"></div><div class="hc-line short"></div><div class="hc-badge">IPD</div></div>
-                  <div class="hc-row"><div class="hc-dot green"></div><div class="hc-line"></div><div class="hc-badge">OPD</div></div>
-                  <div class="hc-row"><div class="hc-dot yellow"></div><div class="hc-line short"></div><div class="hc-badge">ER</div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="proj-tech-row">
-              <span class="proj-tech">React.js</span>
-              <span class="proj-tech">TypeScript</span>
-              <span class="proj-tech">Redux</span>
-              <span class="proj-tech">REST APIs</span>
-              <span class="proj-tech">AI Integration</span>
-            </div>
-            <h3 class="project-name">Zylen Healthcare — Hospital Management</h3>
-            <p class="project-desc">Hospital platform digitizing patient admission, ward/bed management, billing, discharge, and AI-assisted nursing workflows across 5 user roles.</p>
-            <div class="proj-highlights">
-              <span class="proj-highlight">5 User Roles</span>
-              <span class="proj-highlight">Nurse AI Module</span>
-              <span class="proj-highlight">Bed Management</span>
-              <span class="proj-highlight">Billing System</span>
-            </div>
-            <div class="project-expand" id="expand-healthcare">
-              <div class="expand-inner">
-                <div>
-                  <p class="expand-label">5 User Roles</p>
-                  <div class="role-chips">
-                    <span class="role-chip"><i class="fa-solid fa-user-tie"></i> Receptionist</span>
-                    <span class="role-chip"><i class="fa-solid fa-user-nurse"></i> Nurse</span>
-                    <span class="role-chip"><i class="fa-solid fa-user-doctor"></i> Doctor</span>
-                    <span class="role-chip"><i class="fa-solid fa-shield-halved"></i> Admin</span>
-                    <span class="role-chip"><i class="fa-solid fa-file-invoice-dollar"></i> Billing Staff</span>
-                  </div>
-                </div>
-                <div>
-                  <p class="expand-label">Modules Built</p>
-                  <ul class="expand-bullets">
-                    <li>Patient admission &amp; department selection with doctor assignment flow</li>
-                    <li>Ward &amp; Bed Management — listing, creation, assignment, transfer, status tracking</li>
-                    <li>Inpatient/Outpatient Billing UI with discharge summary workflow mapping</li>
-                    <li>Nurse AI test scenarios — ward rounds, clinical observations, AI-generated notes</li>
+                <div class="timeline-project">
+                  <div class="project-label"><i class="fa-solid fa-building-columns"></i> LBG — UK Banking Platform Digitization &amp; E-Commerce</div>
+                  <ul class="exp-bullets">
+                    <li>Built a <strong>TDD application</strong> for digitizing a UK-based banking platform, achieving 70% reusable components via front-end microservices architecture.</li>
+                    <li>Developed React.js components consuming REST APIs, integrated complex data models and authentication systems.</li>
+                    <li>Designed and implemented a dynamic <strong>AI-style playground</strong> with prompt reloading, chat interface, and interactive customer sessions.</li>
+                    <li>Wrote unit tests, followed Agile/Scrum, and collaborated with backend teams to integrate and validate REST APIs.</li>
                   </ul>
                 </div>
               </div>
-            </div>
-            <button class="view-more-btn" onclick="toggleExpand('expand-healthcare', this)">
-              <span>View More</span> <i class="fa-solid fa-chevron-down"></i>
-            </button>
+            </article>
           </div>
         </div>
+      </section>
 
-        <!-- Weather — real screenshot -->
-        <div class="project-card">
-          <div class="project-browser">
-            <div class="browser-bar">
-              <div class="browser-dots"><span></span><span></span><span></span></div>
-              <span class="browser-url">weather-monitor-app</span>
-            </div>
-            <div class="browser-screen">
-              <img src="./assets/proj1.png" class="project-ss" alt="Weather Monitor App" />
-            </div>
+      <!-- ===================== PROJECTS ===================== -->
+      <section id="projects">
+        <div class="wrap">
+          <div class="section-header">
+            <p class="section-tag">What I've built</p>
+            <h2 class="section-title" data-split>Selected projects</h2>
           </div>
-          <div class="project-body">
-            <div class="proj-tech-row">
-              <span class="proj-tech">React.js</span>
-              <span class="proj-tech">OpenWeatherMap API</span>
-              <span class="proj-tech">JavaScript</span>
-            </div>
-            <h3 class="project-name">Weather Monitor</h3>
-            <p class="project-desc">Real-time weather app showing current conditions, temperature, humidity, and wind data by location using the OpenWeatherMap API.</p>
-            <div class="project-links">
-              <a href="https://github.com/Aparnasayikv/weather-app-react" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
-                <i class="fa-brands fa-github"></i> GitHub
-              </a>
-            </div>
+
+          <div class="projects-grid">
+            <!-- RIO (latest) -->
+            <article class="project-card featured tilt" data-tilt>
+              <div class="project-body">
+                <div class="project-top"><span class="p-icon"><i class="fa-solid fa-people-group"></i></span><span class="p-tags"><span>Latest</span><span>Public sector</span><span>AI · Arabic / English</span></span><span class="p-num">01</span></div>
+                <div class="proj-tech-row"><span class="proj-tech">Next.js</span><span class="proj-tech">TypeScript</span><span class="proj-tech">PostgreSQL</span><span class="proj-tech">Prisma</span><span class="proj-tech">LLM APIs</span><span class="proj-tech">Playwright</span></div>
+                <h3 class="project-name">RIO — Community Needs Assessment Platform</h3>
+                <p class="project-desc">A multi-tenant, bilingual (Arabic/English) platform used by non-profit organisations across Saudi Arabia to assess community needs — from survey design to approved reports — with AI built in and humans always in control.</p>
+                <div class="proj-highlights"><span class="proj-highlight">Human-in-the-loop + audit trail</span><span class="proj-highlight">Arabic RTL incl. PDF/Excel</span><span class="proj-highlight">10-role RBAC · row-level security · MFA</span><span class="proj-highlight">Explainable priority scoring</span><span class="proj-highlight">250+ Playwright checks</span></div>
+              </div>
+              <div class="featured-side">
+                <div class="ai-grid">
+                  <div class="ai-tile"><i class="fa-solid fa-sitemap"></i><b>Need classification</b><span>AI sorts needs into domains and sub-domains</span></div>
+                  <div class="ai-tile"><i class="fa-solid fa-list-check"></i><b>KPI &amp; question suggestions</b><span>AI recommends KPIs and survey questions</span></div>
+                  <div class="ai-tile"><i class="fa-solid fa-align-left"></i><b>Confidence-aware summaries</b><span>LLM text adapts to data quality, never overstates weak evidence</span></div>
+                  <div class="ai-tile"><i class="fa-solid fa-clone"></i><b>Semantic duplicates</b><span>Finds near-identical needs before they're counted twice</span></div>
+                </div>
+              </div>
+            </article>
+
+            <!-- TopGeo -->
+            <article class="project-card tilt" data-tilt>
+              <div class="project-body">
+                <div class="project-top"><span class="p-icon"><i class="fa-solid fa-map-location-dot"></i></span><span class="p-tags"><span>SaaS</span><span>Geospatial · AI content</span></span><span class="p-num">02</span></div>
+                <div class="proj-tech-row"><span class="proj-tech">React.js</span><span class="proj-tech">TypeScript</span><span class="proj-tech">Redux</span><span class="proj-tech">Python</span><span class="proj-tech">FastAPI</span><span class="proj-tech">PostgreSQL</span></div>
+                <h3 class="project-name">TopGeo — AI-Powered Geospatial SaaS</h3>
+                <p class="project-desc">Enterprise platform generating AI-written, SEO-optimized landing pages at scale through a CMS-style page builder. I built the FastAPI content-agent service, the grounding workflow and the reusable section-based page system.</p>
+                <div class="proj-highlights"><span class="proj-highlight">AI content agent</span><span class="proj-highlight">Grounding workflow</span><span class="proj-highlight">Recommended Facts</span><span class="proj-highlight">CMS page builder</span></div>
+                <div class="project-expand" id="expand-topgeo">
+                  <div class="expand-inner">
+                    <div>
+                      <p class="expand-label">Grounding workflow</p>
+                      <div class="workflow-steps">
+                        <div class="workflow-step"><span class="step-num">1</span><div><strong>AI generate</strong><p>FastAPI service generates location-specific page content</p></div></div>
+                        <div class="workflow-step"><span class="step-num">2</span><div><strong>Validate &amp; ground</strong><p>Facts are checked against authoritative data sources</p></div></div>
+                        <div class="workflow-step"><span class="step-num">3</span><div><strong>Review &amp; approve</strong><p>Editors approve or reject individual facts</p></div></div>
+                        <div class="workflow-step"><span class="step-num">4</span><div><strong>Publish</strong><p>Approved content goes live on the SEO page</p></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="view-more-btn" data-expand="expand-topgeo" aria-expanded="false"><span>View More</span> <i class="fa-solid fa-chevron-down"></i></button>
+              </div>
+            </article>
+
+            <!-- Zylen Healthcare -->
+            <article class="project-card tilt" data-tilt>
+              <div class="project-body">
+                <div class="project-top"><span class="p-icon"><i class="fa-solid fa-hospital"></i></span><span class="p-tags"><span>Healthcare</span><span>AI-assisted nursing</span></span><span class="p-num">03</span></div>
+                <div class="proj-tech-row"><span class="proj-tech">React.js</span><span class="proj-tech">TypeScript</span><span class="proj-tech">Redux</span><span class="proj-tech">REST APIs</span></div>
+                <h3 class="project-name">Zylen Healthcare — Hospital Management</h3>
+                <p class="project-desc">Hospital platform digitizing patient admission, ward and bed management, billing, discharge and AI-assisted nursing workflows across 5 user roles.</p>
+                <div class="proj-highlights"><span class="proj-highlight">5 user roles</span><span class="proj-highlight">Bed management</span><span class="proj-highlight">Billing &amp; discharge</span><span class="proj-highlight">Nurse AI</span></div>
+                <div class="project-expand" id="expand-healthcare">
+                  <div class="expand-inner">
+                    <div>
+                      <p class="expand-label">Roles</p>
+                      <div class="role-chips">
+                        <span class="role-chip"><i class="fa-solid fa-user-tie"></i> Receptionist</span>
+                        <span class="role-chip"><i class="fa-solid fa-user-nurse"></i> Nurse</span>
+                        <span class="role-chip"><i class="fa-solid fa-user-doctor"></i> Doctor</span>
+                        <span class="role-chip"><i class="fa-solid fa-shield-halved"></i> Admin</span>
+                        <span class="role-chip"><i class="fa-solid fa-file-invoice-dollar"></i> Billing Staff</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="view-more-btn" data-expand="expand-healthcare" aria-expanded="false"><span>View More</span> <i class="fa-solid fa-chevron-down"></i></button>
+              </div>
+            </article>
           </div>
         </div>
+      </section>
 
-        <!-- Trading — real screenshot -->
-        <div class="project-card span-2">
-          <div class="project-browser">
-            <div class="browser-bar">
-              <div class="browser-dots"><span></span><span></span><span></span></div>
-              <span class="browser-url">stock-trading-king</span>
-            </div>
-            <div class="browser-screen">
-              <img src="./assets/proj2.png" class="project-ss" alt="Stock Trading App" />
-            </div>
+      <!-- ===================== CONTACT (gradient bookend) ===================== -->
+      <section id="contact" class="hero-tone">
+        <div class="wrap contact-wrap">
+          <p class="section-tag">Let's connect</p>
+          <h2 class="contact-script">Let's build something together.</h2>
+          <p class="contact-intro reveal">Open to new opportunities — whether it's a role, a project, or just a conversation. Feel free to reach out!</p>
+          <div class="hero-buttons contact-buttons">
+            <a href="mailto:aparnasayikv1999@gmail.com" class="pill pill-solid magnetic"><i class="fa-solid fa-paper-plane"></i> Say hello</a>
+            <a href="https://www.linkedin.com/in/aparnakv/" target="_blank" rel="noopener noreferrer" class="pill pill-outline magnetic">LinkedIn</a>
           </div>
-          <div class="project-body">
-            <div class="proj-tech-row">
-              <span class="proj-tech">React.js</span>
-              <span class="proj-tech">Redux</span>
-              <span class="proj-tech">Stock API</span>
-            </div>
-            <h3 class="project-name">Stock Trading App</h3>
-            <p class="project-desc">Stock trading simulation with live portfolio tracking, real-time price changes, and tabular market data for GOOGL, MSFT, and more.</p>
-            <div class="project-links">
-              <a href="https://github.com/Aparnasayikv/stock-trading-app" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
-                <i class="fa-brands fa-github"></i> GitHub
-              </a>
-            </div>
+          <div class="contact-grid">
+            <a href="mailto:aparnasayikv1999@gmail.com" class="contact-card tilt" data-tilt>
+              <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+              <span><span class="contact-label">Email</span><span class="contact-value">aparnasayikv1999@gmail.com</span></span>
+            </a>
+            <a href="https://www.linkedin.com/in/aparnakv/" target="_blank" rel="noopener noreferrer" class="contact-card tilt" data-tilt>
+              <span class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+              <span><span class="contact-label">LinkedIn</span><span class="contact-value">linkedin.com/in/aparnakv</span></span>
+            </a>
+            <a href="https://github.com/Aparnasayikv" target="_blank" rel="noopener noreferrer" class="contact-card tilt" data-tilt>
+              <span class="contact-icon"><i class="fa-brands fa-github"></i></span>
+              <span><span class="contact-label">GitHub</span><span class="contact-value">github.com/Aparnasayikv</span></span>
+            </a>
           </div>
         </div>
+        <footer>
+          <div class="wrap footer-inner">
+            <a href="#profile" class="logo">Aparna</a>
+            <p class="footer-copy">© 2026 Aparna K V. Designed &amp; built with care.</p>
+          </div>
+        </footer>
+      </section>
+    </main>
 
-      </div>
-    </section>
-
-    <!-- ===================== CONTACT ===================== -->
-    <section id="contact">
-      <div class="section-header">
-        <p class="section-tag">Let's Connect</p>
-        <h2 class="section-title">Get In Touch</h2>
-      </div>
-      <p class="contact-intro">
-        Open to new opportunities — whether it's a role, a project, or just a conversation. Feel free to reach out!
-      </p>
-      <div class="contact-grid">
-        <a href="mailto:aparnasayikv1999@gmail.com" class="contact-card">
-          <div class="contact-icon-wrap">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-          </div>
-          <div>
-            <p class="contact-label">Email</p>
-            <p class="contact-value">aparnasayikv1999@gmail.com</p>
-          </div>
-        </a>
-        <a href="https://www.linkedin.com/in/aparnakv/" target="_blank" rel="noopener noreferrer" class="contact-card">
-          <div class="contact-icon-wrap">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </div>
-          <div>
-            <p class="contact-label">LinkedIn</p>
-            <p class="contact-value">linkedin.com/in/aparnakv</p>
-          </div>
-        </a>
-        <a href="https://github.com/Aparnasayikv" target="_blank" rel="noopener noreferrer" class="contact-card">
-          <div class="contact-icon-wrap">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          </div>
-          <div>
-            <p class="contact-label">GitHub</p>
-            <p class="contact-value">github.com/Aparnasayikv</p>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- ===================== FOOTER ===================== -->
-    <footer>
-      <div class="footer-inner">
-        <div class="footer-logo">Aparna <span class="logo-dot">KV.</span></div>
-        <nav class="footer-nav">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <p class="footer-copy">© 2024 Aparna K V. All Rights Reserved.</p>
-      </div>
-    </footer>
-
-    <script src="script.js?v=2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="script.js?v=11"></script>
   </body>
 </html>
